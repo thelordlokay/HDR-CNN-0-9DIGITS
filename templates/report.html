@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Handwritten Digit Recognition Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('static/img/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .layer {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .layer-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .layer-details {
+            margin-left: 20px;
+            color: #555;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .chart-container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Handwritten Digit Recognition Report</h1>
+        
+        <!-- Model Architecture -->
+        <h2>Model Architecture</h2>
+        
+        <!-- Layer 1 -->
+        <div class="layer">
+            <div class="layer-name">Convolutional Layer 1</div>
+            <div class="layer-details">
+                <p>Input Channels: 1</p>
+                <p>Number of Filters: 6</p>
+                <p>Kernel Size: 5x5</p>
+                <p>Padding: 2</p>
+                <p>Stride: 1</p>
+                <p>Learning Rate: 0.01</p>
+            </div>
+        </div>
+
+        <!-- Layer 2 -->
+        <div class="layer">
+            <div class="layer-name">ReLu Activation</div>
+            <div class="layer-details">
+                <!-- No additional details for ReLu layer -->
+            </div>
+        </div>
+
+        <!-- Layer 3 -->
+        <div class="layer">
+            <div class="layer-name">Maxpooling Layer 2</div>
+            <div class="layer-details">
+                <p>Pool Size: 2x2</p>
+                <p>Stride: 2</p>
+            </div>
+        </div>
+
+        <!-- Layer 4 -->
+        <div class="layer">
+            <div class="layer-name">Convolutional Layer 3</div>
+            <div class="layer-details">
+                <p>Input Channels: 6</p>
+                <p>Number of Filters: 16</p>
+                <p>Kernel Size: 5x5</p>
+                <p>Padding: 0</p>
+                <p>Stride: 1</p>
+                <p>Learning Rate: 0.01</p>
+            </div>
+        </div>
+
+        <!-- Layer 5 -->
+        <div class="layer">
+            <div class="layer-name">Maxpooling Layer 4</div>
+            <div class="layer-details">
+                <p>Pool Size: 2x2</p>
+                <p>Stride: 2</p>
+            </div>
+        </div>
+
+        <!-- Layer 6 -->
+        <div class="layer">
+            <div class="layer-name">Convolutional Layer 5</div>
+            <div class="layer-details">
+                <p>Input Channels: 16</p>
+                <p>Number of Filters: 120</p>
+                <p>Kernel Size: 5x5</p>
+                <p>Padding: 0</p>
+                <p>Stride: 1</p>
+                <p>Learning Rate: 0.01</p>
+            </div>
+        </div>
+
+        <!-- Layer 7 -->
+        <div class="layer">
+            <div class="layer-name">Flatten Layer</div>
+            <div class="layer-details">
+                <!-- No additional details for Flatten layer -->
+            </div>
+        </div>
+
+        <!-- Layer 8 -->
+        <div class="layer">
+            <div class="layer-name">Fully Connected Layer 6</div>
+            <div class="layer-details">
+                <p>Number of Inputs: 120</p>
+                <p>Number of Outputs: 84</p>
+                <p>Learning Rate: 0.01</p>
+            </div>
+        </div>
+
+        <!-- Layer 9 -->
+        <div class="layer">
+            <div class="layer-name">ReLu Activation</div>
+            <div class="layer-details">
+                <!-- No additional details for ReLu layer -->
+            </div>
+        </div>
+
+        <!-- Layer 10 -->
+        <div class="layer">
+            <div class="layer-name">Fully Connected Layer 7</div>
+            <div class="layer-details">
+                <p>Number of Inputs: 84</p>
+                <p>Number of Outputs: 10</p>
+                <p>Learning Rate: 0.01</p>
+            </div>
+        </div>
+
+        <!-- Layer 11 -->
+        <div class="layer">
+            <div class="layer-name">Softmax Layer</div>
+            <div class="layer-details">
+                <!-- No additional details for Softmax layer -->
+            </div>
+        </div>
+
+        <!-- Probability Chart -->
+        <div class="mt-5">
+            <h2>Probability Chart</h2>
+            <div class="chart-container">
+                <canvas id="probability-chart" height="300"></canvas>
+            </div>
+        </div>
+
+        <!-- Training Report -->
+        <div class="mt-5">
+            <h1>Training Report</h1>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var probability = parseFloat('{{ probability }}');
+            var ctx = document.getElementById('probability-chart').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Probability'],
+                    datasets: [{
+                        label: 'Probability',
+                        data: [probability],
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)', // Change background color
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true, // Make chart responsive
+                    maintainAspectRatio: false, // Don't maintain aspect ratio
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        });
+        // Fetch training log content
+        fetch('/training_log.txt')
+            .then(response => response.text())
+            .then(text => {
+            // Display the content in the output div
+            document.getElementById('output').innerText = text;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

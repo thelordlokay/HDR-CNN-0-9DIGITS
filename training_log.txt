@@ -1,0 +1,83 @@
+
+Loading data......
+Dataset Information:
+Number of training samples: 60000
+Number of testing samples: 10000
+Shape of training images: (60000, 28, 28)
+Shape of testing images: (10000, 28, 28)
+Number of classes: 10
+Training Lenet......
+=== Epoch: 0/1 === Iter:32 === Loss: 2.33 === BAcc: 0.12 === TAcc: 0.12 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:64 === Loss: 2.33 === BAcc: 0.09 === TAcc: 0.11 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:96 === Loss: 2.30 === BAcc: 0.16 === TAcc: 0.12 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:128 === Loss: 2.28 === BAcc: 0.16 === TAcc: 0.13 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:160 === Loss: 2.34 === BAcc: 0.03 === TAcc: 0.11 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:192 === Loss: 2.33 === BAcc: 0.00 === TAcc: 0.09 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:224 === Loss: 2.28 === BAcc: 0.22 === TAcc: 0.11 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:256 === Loss: 2.29 === BAcc: 0.16 === TAcc: 0.12 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:288 === Loss: 2.32 === BAcc: 0.06 === TAcc: 0.11 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:320 === Loss: 2.29 === BAcc: 0.09 === TAcc: 0.11 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:352 === Loss: 2.30 === BAcc: 0.06 === TAcc: 0.11 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:384 === Loss: 2.25 === BAcc: 0.28 === TAcc: 0.12 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:416 === Loss: 2.29 === BAcc: 0.16 === TAcc: 0.12 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:448 === Loss: 2.27 === BAcc: 0.09 === TAcc: 0.12 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:480 === Loss: 2.18 === BAcc: 0.31 === TAcc: 0.13 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:512 === Loss: 2.30 === BAcc: 0.19 === TAcc: 0.14 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:544 === Loss: 2.17 === BAcc: 0.19 === TAcc: 0.14 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:576 === Loss: 2.24 === BAcc: 0.16 === TAcc: 0.14 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:608 === Loss: 2.14 === BAcc: 0.16 === TAcc: 0.14 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:640 === Loss: 2.22 === BAcc: 0.22 === TAcc: 0.15 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:672 === Loss: 2.04 === BAcc: 0.25 === TAcc: 0.15 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:704 === Loss: 2.14 === BAcc: 0.22 === TAcc: 0.15 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:736 === Loss: 2.20 === BAcc: 0.28 === TAcc: 0.16 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:768 === Loss: 2.18 === BAcc: 0.19 === TAcc: 0.16 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:800 === Loss: 2.09 === BAcc: 0.25 === TAcc: 0.16 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:832 === Loss: 2.13 === BAcc: 0.12 === TAcc: 0.16 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:864 === Loss: 1.97 === BAcc: 0.38 === TAcc: 0.17 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:896 === Loss: 2.05 === BAcc: 0.16 === TAcc: 0.17 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:928 === Loss: 2.09 === BAcc: 0.25 === TAcc: 0.17 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:960 === Loss: 1.87 === BAcc: 0.41 === TAcc: 0.18 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:992 === Loss: 1.81 === BAcc: 0.41 === TAcc: 0.19 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1024 === Loss: 1.70 === BAcc: 0.41 === TAcc: 0.19 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1056 === Loss: 1.79 === BAcc: 0.41 === TAcc: 0.20 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1088 === Loss: 1.80 === BAcc: 0.31 === TAcc: 0.20 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1120 === Loss: 1.55 === BAcc: 0.34 === TAcc: 0.21 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1152 === Loss: 1.64 === BAcc: 0.38 === TAcc: 0.21 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1184 === Loss: 1.22 === BAcc: 0.56 === TAcc: 0.22 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1216 === Loss: 1.23 === BAcc: 0.56 === TAcc: 0.23 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1248 === Loss: 1.68 === BAcc: 0.50 === TAcc: 0.24 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1280 === Loss: 1.75 === BAcc: 0.47 === TAcc: 0.24 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1312 === Loss: 1.22 === BAcc: 0.47 === TAcc: 0.25 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1344 === Loss: 1.03 === BAcc: 0.56 === TAcc: 0.26 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1376 === Loss: 1.38 === BAcc: 0.59 === TAcc: 0.26 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1408 === Loss: 1.26 === BAcc: 0.56 === TAcc: 0.27 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1440 === Loss: 1.30 === BAcc: 0.50 === TAcc: 0.28 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1472 === Loss: 0.93 === BAcc: 0.66 === TAcc: 0.28 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1504 === Loss: 0.88 === BAcc: 0.75 === TAcc: 0.29 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1536 === Loss: 0.99 === BAcc: 0.62 === TAcc: 0.30 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1568 === Loss: 0.61 === BAcc: 0.84 === TAcc: 0.31 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1600 === Loss: 1.06 === BAcc: 0.59 === TAcc: 0.32 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1632 === Loss: 0.74 === BAcc: 0.69 === TAcc: 0.33 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1664 === Loss: 0.79 === BAcc: 0.75 === TAcc: 0.33 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1696 === Loss: 0.74 === BAcc: 0.88 === TAcc: 0.34 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1728 === Loss: 0.41 === BAcc: 0.88 === TAcc: 0.35 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1760 === Loss: 0.45 === BAcc: 0.91 === TAcc: 0.36 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1792 === Loss: 0.48 === BAcc: 0.88 === TAcc: 0.37 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1824 === Loss: 0.49 === BAcc: 0.78 === TAcc: 0.38 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1856 === Loss: 0.75 === BAcc: 0.75 === TAcc: 0.39 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1888 === Loss: 0.69 === BAcc: 0.72 === TAcc: 0.39 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1920 === Loss: 0.43 === BAcc: 0.84 === TAcc: 0.40 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1952 === Loss: 0.63 === BAcc: 0.75 === TAcc: 0.41 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:1984 === Loss: 0.64 === BAcc: 0.66 === TAcc: 0.41 === Remain: 5 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2016 === Loss: 0.68 === BAcc: 0.75 === TAcc: 0.41 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2048 === Loss: 0.94 === BAcc: 0.69 === TAcc: 0.42 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2080 === Loss: 0.79 === BAcc: 0.75 === TAcc: 0.42 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2112 === Loss: 0.87 === BAcc: 0.81 === TAcc: 0.43 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2144 === Loss: 0.52 === BAcc: 0.84 === TAcc: 0.44 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2176 === Loss: 0.34 === BAcc: 0.91 === TAcc: 0.44 === Remain: 3 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2208 === Loss: 0.31 === BAcc: 0.88 === TAcc: 0.45 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2240 === Loss: 0.43 === BAcc: 0.84 === TAcc: 0.45 === Remain: 3 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2272 === Loss: 0.38 === BAcc: 0.88 === TAcc: 0.46 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2304 === Loss: 0.27 === BAcc: 0.94 === TAcc: 0.47 === Remain: 4 Hrs 0 Mins 0 Secs ===
+=== Epoch: 0/1 === Iter:2336 === Loss: 0.26 === BAcc: 0.91 === TAcc: 0.47 === Remain: 4 Hrs 0 Mins 0 Secs ===
+Loading data......
